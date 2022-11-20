@@ -4,7 +4,7 @@ import { useCounterEx } from "./hooks/useCounterEx.ts"
 
 function App () {
   const { count, increment, value } = useCounter()
-  const { countEx } = useCounterEx() // objectとして受け取る
+  const { countEx } = useCounterEx( 10 ) // objectとして受け取る
   return (
     <div className="App">
       hello count is { count }<br />
@@ -14,7 +14,7 @@ function App () {
       <hr />
       <br />
 
-      hello countEx is{ countEx }<br />
+      hello countEx is　{ countEx }<br />
 
 
     </div>
